@@ -1,0 +1,81 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: auto;
+    background-color: #0A4D68;
+}
+h1{
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+}
+h2{
+    font-size: 20px;
+}
+.h2{
+    display: inline-block;
+    margin-right: 7px;
+}
+span{
+    display: inline-block;
+    color: #CCCCCC;
+}
+#main{
+    width: 40%;
+    margin: auto;
+}
+/* Form */
+.form{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.form__input{
+    display: inline-block;
+    outline: none;
+    height: 30px;
+    width: 45%;
+    background-color: #eee;
+    border: 1px solid #eee;
+    font-size: 20px;
+    font-weight: 700;
+}
+.form__button{
+    display: inline-block;
+    width: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #eee;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+
+
+/* Delete Button */
+.delete__button{
+    height: 12px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+
+/* Completed Task */
+.complete__task-form{
+    position: relative;
+}
+.complete__task-form::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: #777;
+    width: 50%;
+    margin: auto;
+    z-index: 1000;
+    top: 50%;
+    left: 18%;
+}
