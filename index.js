@@ -6,18 +6,18 @@ const completeTask = ["Completed Task"];
 
 const now = new Date();
 
-let date = if (now.getDate()>10) {
-  return now.getDate()
-} else {
-  return (`0${now.getDate()}`});
-};
-let month = if (now.getMonth()+ > 10) {
-  return now.getMonth();
-}else{
-  return (`0${now.getMonth()+1}`);
-};
+let date = now.getDate();
+let month = now.getMonth();
 let year = now.getFullYear();
-let year = now.getFullYear();
+function getFulldate(){
+  if (date < 10) {
+    date = `0${date}`;
+  }
+  if (month < 10) {
+    month = `0${month}`;
+  }
+}
+getFulldate();
 
 
 const fullDate = date+"-"+month+"-"+year;
