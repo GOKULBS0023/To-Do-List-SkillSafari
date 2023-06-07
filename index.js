@@ -6,9 +6,19 @@ const completeTask = ["Completed Task"];
 
 const now = new Date();
 
-const date = now.getDate();
-const month = now.getMonth();
-const year = now.getFullYear();
+let date = if (now.getDate()>10) {
+  return now.getDate()
+} else {
+  return (`0${now.getDate()}`});
+};
+let month = if (now.getMonth()+ > 10) {
+  return now.getMonth();
+}else{
+  return (`0${now.getMonth()+1}`);
+};
+let year = now.getFullYear();
+let year = now.getFullYear();
+
 
 const fullDate = date+"-"+month+"-"+year;
 
