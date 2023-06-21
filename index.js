@@ -7,7 +7,7 @@ const completeTask = ["Completed Task"];
 const now = new Date();
 
 let date = now.getDate();
-let month = now.getMonth();
+let month = now.getMonth()+1;
 let year = now.getFullYear();
 function getFulldate(){
   if (date < 10) {
